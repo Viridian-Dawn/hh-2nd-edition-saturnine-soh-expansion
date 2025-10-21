@@ -6883,7 +6883,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
               <modifiers>
                 <modifier type="increment" field="03ab-f02c-629e-6f60" value="1">
                   <repeats>
-                    <repeat field="selections" scope="d2f9-e54c-23f0-3eb6" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="78e7-4c38-f748-55e9" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="d2f9-e54c-23f0-3eb6" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7603-79ae-ca31-24a5" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
