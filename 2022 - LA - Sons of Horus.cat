@@ -6824,6 +6824,52 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
+                <selectionEntryGroup name="This model may select one of the following for each Saturnine Disruption Fist it is equipped with:" id="e606-72bb-3704-6944" hidden="false" collective="false" import="true" defaultSelectionEntryId="2b52-b0db-98b7-0973">
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="a039-af6d-f7c8-7cdd"/>
+                    <modifier type="increment" value="1" field="e02b-e7e3-e694-9f8a">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="90b9-a836-f9d4-5cf0" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" value="1" field="a039-af6d-f7c8-7cdd">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="90b9-a836-f9d4-5cf0" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="90b9-a836-f9d4-5cf0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a039-af6d-f7c8-7cdd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e02b-e7e3-e694-9f8a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Particle Shredder" hidden="false" id="45ab-f409-3f81-e117" collective="false" targetId="cf3e-8b02-3d2b-8b48" type="selectionEntry">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dabc-d0c6-af35-b19b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma Blaster" hidden="false" id="e9ef-2051-c571-f80b" collective="false" targetId="cd52-e9e8-3ab1-995c" type="selectionEntry">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2e49-36e9-8617-f53e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="110"/>
@@ -6924,6 +6970,52 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
                     <entryLink id="356f-140d-302f-e65c" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca5b-c73e-916b-22c0" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="This model may select one of the following for each Saturnine Disruption Fist it is equipped with:" id="9e9d-0345-1c48-4e35" hidden="false" collective="false" import="true" defaultSelectionEntryId="2b52-b0db-98b7-0973">
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="7457-2451-0e9d-fe1a"/>
+                    <modifier type="increment" value="1" field="fea6-5b30-f594-3b71">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="90b9-a836-f9d4-5cf0" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" value="1" field="7457-2451-0e9d-fe1a">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="90b9-a836-f9d4-5cf0" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="90b9-a836-f9d4-5cf0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7457-2451-0e9d-fe1a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fea6-5b30-f594-3b71" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Particle Shredder" hidden="false" id="885e-a9f6-b985-9e5e" collective="false" targetId="cf3e-8b02-3d2b-8b48" type="selectionEntry">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f55d-173e-5104-afe9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma Blaster" hidden="false" id="01c3-39e9-64e5-0fb8" collective="false" targetId="cd52-e9e8-3ab1-995c" type="selectionEntry">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6e81-c624-034e-4c82" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -7119,6 +7211,52 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="This model may select one of the following for each Saturnine Disruption Fist it is equipped with:" id="783c-31e1-f243-d1ed" hidden="false" collective="false" import="true" defaultSelectionEntryId="2b52-b0db-98b7-0973">
+              <modifiers>
+                <modifier type="decrement" value="1" field="0764-9c90-2906-fbf7"/>
+                <modifier type="increment" value="1" field="21f5-c188-c8a7-c4a5">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="90b9-a836-f9d4-5cf0" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="1" field="0764-9c90-2906-fbf7">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="90b9-a836-f9d4-5cf0" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="parent" childId="90b9-a836-f9d4-5cf0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0764-9c90-2906-fbf7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="21f5-c188-c8a7-c4a5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Particle Shredder" hidden="false" id="e981-c099-9400-df4d" collective="false" targetId="cf3e-8b02-3d2b-8b48" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ec5c-ac46-5f7f-57f8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Plasma Blaster" hidden="false" id="3b5e-11ce-c647-9aa8" collective="false" targetId="cd52-e9e8-3ab1-995c" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="23d9-9b30-ee56-51d9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Saturnine Teleportation Transponder" hidden="false" id="765d-be54-ae19-90e0" collective="false" targetId="f710-ab5a-5ba9-02b7" type="selectionEntry">
@@ -7261,6 +7399,52 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Saturnine War Axe" hidden="false" id="d2d6-deb4-1c55-a14d" collective="false" targetId="7986-dcaf-35e1-6404" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="This model may select one of the following for each Saturnine Disruption Fist it is equipped with:" id="8718-d4d6-91c6-e4ed" hidden="false" collective="false" import="true" defaultSelectionEntryId="2b52-b0db-98b7-0973">
+              <modifiers>
+                <modifier type="decrement" value="1" field="c0b1-71d3-398d-d633"/>
+                <modifier type="increment" value="1" field="e1d7-3152-76ad-3ac7">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="90b9-a836-f9d4-5cf0" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="1" field="c0b1-71d3-398d-d633">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="90b9-a836-f9d4-5cf0" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="parent" childId="90b9-a836-f9d4-5cf0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c0b1-71d3-398d-d633" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e1d7-3152-76ad-3ac7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Particle Shredder" hidden="false" id="a014-ece3-1c9f-8c51" collective="false" targetId="cf3e-8b02-3d2b-8b48" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e9eb-3a80-bb53-be43" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Plasma Blaster" hidden="false" id="6a2f-7fcd-e301-db7d" collective="false" targetId="cd52-e9e8-3ab1-995c" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1100-cbbb-110b-05a8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
