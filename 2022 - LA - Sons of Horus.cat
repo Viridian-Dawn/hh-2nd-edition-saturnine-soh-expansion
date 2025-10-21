@@ -7052,7 +7052,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="6392-d501-5b0c-ec7c" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8503-19de-8c90-7ca0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
