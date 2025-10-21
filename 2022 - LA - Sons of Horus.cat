@@ -6807,9 +6807,21 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
                     <entryLink id="74b9-1faf-9054-5c71" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="8dee-b436-0afd-c70a" type="selectionEntry"/>
                     <entryLink id="478d-1298-428c-5335" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="dd06-55b3-1c77-1e1d" type="selectionEntry"/>
                     <entryLink id="9a16-843c-e37b-4d38" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="8720-32c4-0099-63f4" type="selectionEntry"/>
-                    <entryLink import="true" name="Twin Heavy Disintegrator" hidden="false" id="3660-1c38-16c4-d7fb" collective="false" targetId="5649-d342-6af8-cf0c" type="selectionEntry"/>
-                    <entryLink import="true" name="Saturnine Disruption Fist" hidden="false" id="2a2a-cbd7-78e6-09dd" collective="false" targetId="90b9-a836-f9d4-5cf0" type="selectionEntry"/>
-                    <entryLink import="true" name="Plasma Bombard" hidden="false" id="b799-7756-44ff-fc9c" collective="false" targetId="8876-43f1-7a4d-8195" type="selectionEntry"/>
+                    <entryLink import="true" name="Twin Heavy Disintegrator" hidden="false" id="3660-1c38-16c4-d7fb" collective="false" targetId="5649-d342-6af8-cf0c" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Saturnine Disruption Fist" hidden="false" id="2a2a-cbd7-78e6-09dd" collective="false" targetId="90b9-a836-f9d4-5cf0" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma Bombard" hidden="false" id="b799-7756-44ff-fc9c" collective="false" targetId="8876-43f1-7a4d-8195" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="9e28-02ba-5915-cb06" name="3) Wargear" hidden="false" collective="false" import="true">
@@ -7398,7 +7410,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Saturnine War Axe" hidden="false" id="d2d6-deb4-1c55-a14d" collective="false" targetId="7986-dcaf-35e1-6404" type="selectionEntry"/>
+                <entryLink import="true" name="Saturnine War Axe" hidden="false" id="d2d6-deb4-1c55-a14d" collective="false" targetId="7986-dcaf-35e1-6404" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="This model may select one of the following for each Saturnine Disruption Fist it is equipped with:" id="8718-d4d6-91c6-e4ed" hidden="false" collective="false" import="true" defaultSelectionEntryId="2b52-b0db-98b7-0973">
