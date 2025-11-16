@@ -33977,7 +33977,7 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                   </costs>
                 </entryLink>
                 <entryLink id="9b8b-a8c9-481f-fafe" name="Disintegrator Cannon" hidden="false" collective="false" import="true" targetId="ceb6-d828-9871-14af" type="selectionEntry"/>
-                <entryLink id="0260-3edc-aa2a-48ea" name="Graviton Pulverizer" hidden="false" collective="false" import="true" targetId="a496-62ff-89cb-ab36" type="selectionEntry">
+                <entryLink id="0260-3edc-aa2a-48ea" name="Graviton Pulveriser" hidden="false" collective="false" import="true" targetId="a496-62ff-89cb-ab36" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
@@ -33992,7 +33992,7 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Disintegrator Cannon" hidden="false" id="6d81-0321-c4f9-6cd1" collective="false" targetId="ceb6-d828-9871-14af" type="selectionEntry"/>
-                <entryLink import="true" name="Graviton Pulverizer" hidden="false" id="351a-f007-fdec-7f5c" collective="false" targetId="a496-62ff-89cb-ab36" type="selectionEntry">
+                <entryLink import="true" name="Graviton Pulveriser" hidden="false" id="351a-f007-fdec-7f5c" collective="false" targetId="a496-62ff-89cb-ab36" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
@@ -68152,7 +68152,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6e0-f9a6-7ff1-7b49" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f6e0-f9a6-7ff1-7b49" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b19c-2434-bca4-ed4c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <entryLinks>
@@ -68301,7 +68301,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fdf4-f14a-72e4-1db8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fdf4-f14a-72e4-1db8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8fc6-4d62-e166-3017" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <entryLinks>
@@ -69365,7 +69365,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b8b-5bb1-0159-06d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2b8b-5bb1-0159-06d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="223d-50f3-ed79-53bc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
@@ -69935,7 +69935,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="56f6-e43e-c2ca-1acd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="56f6-e43e-c2ca-1acd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c77c-9ad0-959a-58a9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <entryLinks>
@@ -70554,7 +70554,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e933-5d6f-6958-0d5c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e933-5d6f-6958-0d5c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f0a9-0061-ce58-91d9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <entryLinks>
@@ -70651,7 +70651,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e3a-db5a-585c-ed22" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5e3a-db5a-585c-ed22" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4a7f-dcc9-f6a5-d81a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <entryLinks>
@@ -70910,7 +70910,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aebf-68ab-4945-3f16" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="aebf-68ab-4945-3f16" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f43c-50d1-8432-f810" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <entryLinks>
