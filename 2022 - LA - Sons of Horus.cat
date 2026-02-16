@@ -3373,6 +3373,7 @@
       <categoryLinks>
         <categoryLink id="4736-a3de-2598-904d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="6bf9-2ee4-79e7-0a9b" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink targetId="9231-183c-b97b-63f9" id="3f05-5e91-46a5-e96b" primary="false" name="Heavy Sub-type"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="fd6e-f1d3-2400-49d5" name="Veteran Breacher Squad" hidden="false" collective="false" import="false" targetId="2231-cb49-b8b9-a51e" type="selectionEntry">
@@ -3387,6 +3388,7 @@
         <categoryLink id="ea93-7c5f-ae88-7266" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true">
           <comment>template_id_4986-9157-49f2-b670</comment>
         </categoryLink>
+        <categoryLink targetId="9231-183c-b97b-63f9" id="af52-460b-2d54-a828" primary="false" name="Heavy Sub-type"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
