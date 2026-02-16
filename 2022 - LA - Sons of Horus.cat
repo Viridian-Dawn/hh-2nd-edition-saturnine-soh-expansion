@@ -3353,6 +3353,42 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="d5fd-0dd9-61de-0558" name="Veteran Breacher Squad" hidden="true" collective="false" import="false" targetId="2231-cb49-b8b9-a51e" type="selectionEntry">
+      <comment>template_id_02ca-5079-4248-b353</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>node_id_ede2-d453-4e34-8cda</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>node_id_2907-3215-4b01-96ff</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
+                  <comment>node_id_c90c-959f-40fb-a4cb</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4736-a3de-2598-904d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="6bf9-2ee4-79e7-0a9b" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fd6e-f1d3-2400-49d5" name="Veteran Breacher Squad" hidden="false" collective="false" import="false" targetId="2231-cb49-b8b9-a51e" type="selectionEntry">
+      <comment>template_id_9d03-74fb-4e04-91f4</comment>
+      <categoryLinks>
+        <categoryLink id="5788-01ba-023d-4458" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          <comment>template_id_0aff-4f6e-4b03-a23c</comment>
+        </categoryLink>
+        <categoryLink id="95ac-32a2-01f0-dfee" name="Compulsory Elite:" hidden="false" targetId="bb1f-ae32-b587-c3e1" primary="false">
+          <comment>template_id_7d5a-62e7-43ee-b79b</comment>
+        </categoryLink>
+        <categoryLink id="ea93-7c5f-ae88-7266" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true">
+          <comment>template_id_4986-9157-49f2-b670</comment>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="0c73-9141-d1b4-6a40" name="Chieftain Squad" hidden="false" collective="false" import="true" type="unit">
