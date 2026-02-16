@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes (Virdian&apos;s Expansion)" revision="213" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="7f63-3c97-8fab-8aac" name="Legions Astartes (Virdian&apos;s Expansion)" revision="213" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="7cd9-98b7-0ce8-026f" gameSystemRevision="71" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -79841,10 +79841,10 @@ When included in a Shattered Legions Detachment, this model must represent the L
     </rule>
   </sharedRules>
   <catalogueLinks>
-    <catalogueLink id="60d6-cab6-4580-b772" name="Mech Library" targetId="3129-da35-55e0-642d" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="e048-9e5e-507c-5bab" name="LI - Assassins and Agents" targetId="4c88-1a81-7e53-0a67" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="e123-456e-507c-5tra" name="Daemons - Bound Daemons" targetId="e545-295b-4cd9-f235" type="catalogue" importRootEntries="true"/>
-    <catalogueLink type="catalogue" name="Daemons - Daemons of the Ruinstorm" id="8b20-7569-6f4a-44f9" targetId="ac63-5340-2e9e-1eb6"/>
+    <catalogueLink id="60d6-cab6-4580-b772" name="Mech Library" targetId="9008-9427-28fa-708c" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="e048-9e5e-507c-5bab" name="LI - Assassins and Agents" targetId="3058-0360-16d0-2bcb" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="e123-456e-507c-5tra" name="Daemons - Bound Daemons" targetId="f26b-8cf5-05a0-0984" type="catalogue" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Daemons - Daemons of the Ruinstorm" id="8b20-7569-6f4a-44f9" targetId="5eaf-26cf-a947-9419"/>
   </catalogueLinks>
   <comment>Do not import me into a non-LA list or you&apos;ll end up with rites of war.</comment>
 </catalogue>

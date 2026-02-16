@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="67bb-e640-ef0a-0e16" name="Shattered Legions" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="115" revision="5" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="3973-2c4b-b65f-6d19" name="Shattered Legions" gameSystemId="7cd9-98b7-0ce8-026f" gameSystemRevision="115" revision="5" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Legions Astartes" id="50ca-2201-2e00-f825" targetId="6393-649c-7213-a327" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Legions Astartes" id="50ca-2201-2e00-f825" targetId="7f63-3c97-8fab-8aac" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Retinue" id="456b-39f3-0d4f-ba17" hidden="false" collective="false" import="true">
@@ -722,7 +722,7 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink import="false" name="Leviathan Dreadnought Talon" hidden="false" id="e1f9-7e45-948f-ece3" collective="false" targetId="c2a7-9e2c-fc65-1b78" type="selectionEntry">
+    <entryLink import="false" name="Saturnine Dreadnought Talon" hidden="false" id="e1f9-7e45-948f-ece3" collective="false" targetId="c2a7-9e2c-fc65-1b78" type="selectionEntry">
       <categoryLinks>
         <categoryLink name="Unit:" hidden="false" id="3f22-5e06-c2b7-f23b" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>template_id_6ea9-a7e5-437d-9e35</comment>
