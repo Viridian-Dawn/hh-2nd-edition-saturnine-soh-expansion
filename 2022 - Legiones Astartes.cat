@@ -72371,6 +72371,70 @@ Lacking the complexity of true automata, these stationary units are set in place
                         </entryLink>
                       </entryLinks>
                     </selectionEntryGroup>
+                    <selectionEntryGroup name="Melee Weapon:" id="28cd-a132-4831-31a8" hidden="false" collective="false" import="true">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a614-e125-b1df-d58c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink import="true" name="Chainsword" hidden="false" id="dea2-7dfd-8617-0575" collective="false" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Heavy Chainsword" hidden="false" id="00dc-11cc-d3fe-bddf" collective="false" targetId="ba92-3eda-3a71-dabb" type="selectionEntry">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Lightning Claw" hidden="false" id="6d49-cc02-73ba-a644" collective="false" targetId="6923-4e42-5691-b13f" type="selectionEntry">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Chainaxe" hidden="true" id="91f1-adde-8836-dbe3" collective="false" targetId="ed76-dace-31e4-b174" type="selectionEntry">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+                          </costs>
+                          <modifiers>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="force" childId="90ee-77dd-1b7f-ddfe" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </entryLink>
+                        <entryLink import="true" name="Fenrisian Axe" hidden="false" id="32ba-3607-6851-c121" collective="false" targetId="72ba-d2df-d98b-8b5d" type="selectionEntry">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="4"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Raven&apos;s Talon" hidden="false" id="97ca-c4d8-c529-c2e0" collective="false" targetId="09d8-64f5-1936-e8ab" type="selectionEntry">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Power Weapon" hidden="false" id="be1a-9faa-6664-e6ff" collective="false" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Charnabal Tabar" hidden="false" id="b42f-a9ba-7564-74bd" collective="false" targetId="4611-c33e-f360-7246" type="selectionEntry">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Charnabal Sabre" hidden="false" id="d8fe-ea01-4cd4-09f2" collective="false" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Charnabal Glaive" hidden="false" id="173d-0008-a4f6-c33f" collective="false" targetId="c07c-35e6-4616-ef25" type="selectionEntry">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
                   </selectionEntryGroups>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="288a-0a1d-7122-cf69" name="2) Bolt Pistol Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="046a-b3ba-3684-0e04">
@@ -72440,101 +72504,6 @@ Lacking the complexity of true automata, these stationary units are set in place
                       </conditions>
                     </modifier>
                   </modifiers>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="28cd-a132-4831-31a8" name="4) Extra Melee Weapon:" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a614-e125-b1df-d58c" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="dea2-7dfd-8617-0575" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="00dc-11cc-d3fe-bddf" name="Heavy Chainsword" hidden="false" collective="false" import="true" targetId="ba92-3eda-3a71-dabb" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="6d49-cc02-73ba-a644" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="6923-4e42-5691-b13f" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="91f1-adde-8836-dbe3" name="Chainaxe" hidden="true" collective="false" import="true" targetId="ed76-dace-31e4-b174" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditions>
-                            <condition type="equalTo" value="1" field="selections" scope="force" childId="90ee-77dd-1b7f-ddfe" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
-                    <entryLink id="32ba-3607-6851-c121" name="Fenrisian Axe" hidden="false" collective="false" import="true" targetId="72ba-d2df-d98b-8b5d" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="4"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="97ca-c4d8-c529-c2e0" name="Raven&apos;s Talon" hidden="false" collective="false" import="true" targetId="09d8-64f5-1936-e8ab" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="be1a-9faa-6664-e6ff" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="b42f-a9ba-7564-74bd" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="d8fe-ea01-4cd4-09f2" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="173d-0008-a4f6-c33f" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="c07c-35e6-4616-ef25" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="3) May Take:" id="2422-e45d-7925-8718" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe5a-87c3-df23-7a02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Nuncio-Vox" hidden="false" id="e7c9-8729-535f-77b1" collective="false" targetId="005e-aae6-ddac-bb45" type="selectionEntry">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8e7-1c06-9a86-79af" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Augury Scanner" hidden="false" id="90c1-fb00-787c-85fa" collective="false" targetId="67ee-7338-3b74-04b4" type="selectionEntry">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa31-e80a-92a1-9b1c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Legion Vexilla" hidden="false" id="328f-e3ed-cd5f-bc68" collective="false" targetId="21b1-2a90-9826-1782" type="selectionEntry">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c632-0b69-ecca-d95a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
