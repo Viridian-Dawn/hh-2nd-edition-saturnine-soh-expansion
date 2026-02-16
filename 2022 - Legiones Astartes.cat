@@ -28943,7 +28943,7 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                     </entryLink>
                   </entryLinks>
                   <modifiers>
-                    <modifier type="set" value="533f-7a1c-adfb-afe4" field="defaultSelectionEntryId">
+                    <modifier type="set" value="046a-b3ba-3684-0e04" field="defaultSelectionEntryId">
                       <conditions>
                         <condition type="equalTo" value="1" field="selections" scope="force" childId="c7be-f327-8718-3dfb" shared="true" includeChildSelections="true"/>
                       </conditions>
@@ -72107,7 +72107,7 @@ Lacking the complexity of true automata, these stationary units are set in place
                 <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd32-fc38-55bd-dfa9" type="max"/>
               </constraints>
               <profiles>
-                <profile id="6082-5fed-84e1-0d9e" name="Veteran" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+                <profile id="6082-5fed-84e1-0d9e" name="Veteran Breacher" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
                   <modifiers>
                     <modifier type="set" field="893e-2d76-8f04-44e5" value="8*">
                       <conditionGroups>
@@ -72314,36 +72314,64 @@ Lacking the complexity of true automata, these stationary units are set in place
                     </entryLink>
                   </entryLinks>
                   <modifiers>
-                    <modifier type="set" value="533f-7a1c-adfb-afe4" field="defaultSelectionEntryId">
+                    <modifier type="set" value="4f45-6b40-2380-e4f5" field="defaultSelectionEntryId">
                       <conditions>
                         <condition type="equalTo" value="1" field="selections" scope="force" childId="c7be-f327-8718-3dfb" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="ca34-3746-514c-2ebd" name="1.5) Bayonets" hidden="false" collective="false" import="true">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1ade-0c02-5612-252b" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28c0-8dfb-90a8-84b6" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="8ccf-94f7-f9d0-10f4" name="Bayonet" hidden="false" collective="false" import="true" targetId="6904-6936-d6ca-a0eb" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="0590-35ff-28a0-5012" name="Chain Bayonet" hidden="false" collective="false" import="true" targetId="bd82-cef6-67f8-19b5" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="For every five models in the unit, one Breacher may exchange his Bolter for:" id="0cc1-7891-bc62-cba8" hidden="false" collective="false" import="true">
+                      <modifiers>
+                        <modifier type="increment" value="1" field="dfd6-5a1f-a337-00c5">
+                          <repeats>
+                            <repeat value="5" repeats="1" field="selections" scope="2231-cb49-b8b9-a51e" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="0" field="selections" scope="2231-cb49-b8b9-a51e" shared="true" id="dfd6-5a1f-a337-00c5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9450-8911-761f-7741" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink import="true" name="Flamer" hidden="false" id="b0a9-081a-7753-58e3" collective="false" targetId="9f41-82e2-90f6-973a" type="selectionEntry" sortIndex="4">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Meltagun" hidden="false" id="4a1d-2399-c44a-827f" collective="false" targetId="4ebd-57e0-3560-e568" type="selectionEntry" sortIndex="6">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Graviton Gun" hidden="false" id="ab88-ebe7-2b9e-515e" collective="false" targetId="5303-5a3e-de51-1707" type="selectionEntry" sortIndex="5">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Lascutter" hidden="false" id="ca1e-7d03-6b46-37c0" collective="false" targetId="6331-c1b9-bf0e-d0e5" type="selectionEntry" sortIndex="8">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Alchem Flamer" hidden="false" id="eeba-6d05-6e5b-2049" collective="false" targetId="0d08-eaaf-3793-0a70" type="selectionEntry" sortIndex="2">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Dragon&apos;s Breath Flamer" hidden="false" id="b943-affe-3719-5d97" collective="false" targetId="d6c6-779a-0b83-fd15" type="selectionEntry" sortIndex="3">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Graviton Shredder" hidden="false" id="02b3-0299-dc53-bdbd" collective="false" targetId="0849-b63b-0b1b-fd4f" type="selectionEntry" sortIndex="7">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="288a-0a1d-7122-cf69" name="2) Bolt Pistol Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="046a-b3ba-3684-0e04">
                   <constraints>
@@ -72406,14 +72434,14 @@ Lacking the complexity of true automata, these stationary units are set in place
                     </entryLink>
                   </entryLinks>
                   <modifiers>
-                    <modifier type="set" value="533f-7a1c-adfb-afe4" field="defaultSelectionEntryId">
+                    <modifier type="set" value="a627-1174-3d3f-ffc1" field="defaultSelectionEntryId">
                       <conditions>
                         <condition type="equalTo" value="1" field="selections" scope="force" childId="c7be-f327-8718-3dfb" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="28cd-a132-4831-31a8" name="3) Extra Melee Weapon:" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="28cd-a132-4831-31a8" name="4) Extra Melee Weapon:" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a614-e125-b1df-d58c" type="max"/>
                   </constraints>
@@ -72477,9 +72505,40 @@ Lacking the complexity of true automata, these stationary units are set in place
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
+                <selectionEntryGroup name="3) May Take:" id="2422-e45d-7925-8718" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe5a-87c3-df23-7a02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Nuncio-Vox" hidden="false" id="e7c9-8729-535f-77b1" collective="false" targetId="005e-aae6-ddac-bb45" type="selectionEntry">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8e7-1c06-9a86-79af" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Augury Scanner" hidden="false" id="90c1-fb00-787c-85fa" collective="false" targetId="67ee-7338-3b74-04b4" type="selectionEntry">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa31-e80a-92a1-9b1c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Vexilla" hidden="false" id="328f-e3ed-cd5f-bc68" collective="false" targetId="21b1-2a90-9826-1782" type="selectionEntry">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c632-0b69-ecca-d95a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
               </costs>
               <categoryLinks>
                 <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="3d12-3f7f-3d4b-62eb" name="Infantry Unit Type" primary="false"/>
@@ -72506,207 +72565,6 @@ Lacking the complexity of true automata, these stationary units are set in place
                   <comment>The Flesh Is Weak</comment>
                 </modifierGroup>
               </modifierGroups>
-            </selectionEntry>
-            <selectionEntry id="d961-5c96-1ea4-6a75" name="Veteran Breacher w/Heavy/Special Weapon (1 in 5)" hidden="false" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="increment" field="107a-a6b9-6bb9-8be0" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="2231-cb49-b8b9-a51e" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="107a-a6b9-6bb9-8be0" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="0b9c-70f8-e2e8-2ccf" name="Veteran Breacher" hidden="false" targetId="3dd0-d791-32fd-1e21" type="profile"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="0edd-c7fd-0b51-4e87" name="1) Heavy/Special Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="9907-9a12-9cdb-d4f7">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a28-ff21-d7af-318a" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdb4-b618-b502-b658" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="d604-5ffe-c610-0ef3" name="Flamer" hidden="false" collective="false" import="true" targetId="9f41-82e2-90f6-973a" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="470d-7b6a-5786-70b9" name="Meltagun" hidden="false" collective="false" import="true" targetId="4ebd-57e0-3560-e568" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="53a5-706b-5b96-0d17" name="Graviton Gun" hidden="false" collective="false" import="true" targetId="5303-5a3e-de51-1707" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="cb8d-c12f-fd6e-a4fb" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="f0d1-332b-c719-ede7" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="8567-2a0d-d6f5-afec" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="0d08-eaaf-3793-0a70" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="bdba-a14c-2bc9-7b72" name="Dragon&apos;s Breath Flamer" hidden="false" collective="false" import="true" targetId="d6c6-779a-0b83-fd15" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="0fc7-a148-ddc2-77fa" name="Graviton Shredder" hidden="false" collective="false" import="true" targetId="0849-b63b-0b1b-fd4f" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="set" field="d2ee-04cb-5f8a-2642" value="17">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="ffd6-15ea-125e-4764" name="Plasma Repeater" hidden="false" collective="false" import="true" targetId="7aa4-cb4e-0e15-6213" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="1e4a-88cc-5d08-f643" name="Plasma Burner" hidden="false" collective="false" import="true" targetId="de47-02c8-3273-2f9b" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="b825-8e51-832d-e944" name="Æther-Fire Blaster" hidden="false" collective="false" import="true" targetId="d078-5f42-c02b-c73d" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="4280-b7b7-3d68-aecb" name="Warpfire Blaster" hidden="false" collective="false" import="true" targetId="76c7-1d7c-206a-32a5" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="ec81-f588-92ce-4fba" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="36cb-982a-83e2-ee8f" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="true">
-                          <conditions>
-                            <condition field="selections" scope="d961-5c96-1ea4-6a75" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="975e-14eb-caed-4b5b" type="greaterThan"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="4734-c3e0-c3a4-42f3" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="0ec3-6c91-952c-e0ea" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Missile Launcher (w/ frag, krak, and flak missiles)">
-                          <conditions>
-                            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fae4-6429-a591-d82f" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" field="name" value="Missile Launcher (w/ frag, krak, flak, and stasis missiles)">
-                          <conditions>
-                            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fae4-6429-a591-d82f" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <entryLinks>
-                        <entryLink id="0435-c46e-6d0f-e183" name="Stasis Missiles" hidden="true" collective="false" import="true" targetId="fae4-6429-a591-d82f" type="selectionEntry">
-                          <modifiers>
-                            <modifier type="set" field="hidden" value="false">
-                              <conditions>
-                                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
-                              </conditions>
-                            </modifier>
-                            <modifier type="increment" field="fcc7-fe0e-76c1-e9d2" value="1">
-                              <conditions>
-                                <condition field="selections" scope="2231-cb49-b8b9-a51e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fae4-6429-a591-d82f" type="equalTo"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6ab2-ec1f-e8ce-ef4f" type="max"/>
-                            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcc7-fe0e-76c1-e9d2" type="min"/>
-                          </constraints>
-                          <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-                          </costs>
-                        </entryLink>
-                      </entryLinks>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="4efc-d5cd-d111-56cb" name="Iliastus Assault Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="26a5-0226-e7f2-a931" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="254f-11de-7529-37ee" name="Shrapnel Cannon" hidden="false" collective="false" import="true" targetId="975e-14eb-caed-4b5b" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="17"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Xenos Deathlock" hidden="false" id="2059-88d7-b76a-a7da" type="selectionEntry" targetId="2c50-304f-b74a-33da">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Heavy Alchem Flamer" hidden="false" id="9286-9cec-f269-b85c" collective="false" targetId="2a3d-a4bb-5326-a16a" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
-              </costs>
-              <categoryLinks>
-                <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="6ea1-8eff-2ac8-4ef9" name="Infantry Unit Type" primary="false"/>
-              </categoryLinks>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="remove" value="8b4f-bfe2-ce7b-f1b1" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="remove" value="6d79-a3e4-381f-7b0f" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="d8ab-8e21-e193-63ba" field="category">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <comment>The Flesh Is Weak</comment>
-                </modifierGroup>
-              </modifierGroups>
-              <entryLinks>
-                <entryLink import="true" name="2) Bolt Pistol Options" hidden="false" id="e0fa-f48d-a918-9d59" type="selectionEntryGroup" targetId="8242-b690-bcff-bca4"/>
-                <entryLink import="true" name="3) Extra Melee Weapon:" hidden="false" id="505d-01eb-81cd-76a4" type="selectionEntryGroup" targetId="7548-330f-d66d-36c3"/>
-              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -72976,7 +72834,7 @@ Lacking the complexity of true automata, these stationary units are set in place
                 </entryLink>
               </entryLinks>
               <modifiers>
-                <modifier type="set" value="533f-7a1c-adfb-afe4" field="defaultSelectionEntryId">
+                <modifier type="set" value="eb51-12a0-5d7a-15c3" field="defaultSelectionEntryId">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="c7be-f327-8718-3dfb" shared="true" includeChildSelections="true"/>
                   </conditions>
@@ -73267,36 +73125,12 @@ Lacking the complexity of true automata, these stationary units are set in place
                 </entryLink>
               </entryLinks>
               <modifiers>
-                <modifier type="set" value="533f-7a1c-adfb-afe4" field="defaultSelectionEntryId">
+                <modifier type="set" value="a39e-095c-db63-faba" field="defaultSelectionEntryId">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="c7be-f327-8718-3dfb" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="1.5) Bayonets" id="1daf-d520-f687-13c8" hidden="false" collective="false" import="true">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="1ade-0c02-5612-252b" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b573-adeb-93bc-ff12" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Bayonet" hidden="false" id="1db8-bf72-3f41-5333" collective="false" targetId="6904-6936-d6ca-a0eb" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Chain Bayonet" hidden="false" id="19ef-f310-9d92-38bb" collective="false" targetId="bd82-cef6-67f8-19b5" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="4) Extra Melee Option 2" id="6fee-85a6-4c59-ec4c" hidden="false" collective="false" import="true">
               <constraints>
@@ -73322,7 +73156,7 @@ Lacking the complexity of true automata, these stationary units are set in place
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70"/>
           </costs>
           <entryLinks>
             <entryLink import="true" name="Character Stat Improvement" hidden="false" id="8584-fd4f-0baf-cb7c" type="selectionEntryGroup" targetId="5e99-fcf2-6b64-e88e">
@@ -73358,6 +73192,10 @@ Lacking the complexity of true automata, these stationary units are set in place
               <comment>The Flesh Is Weak</comment>
             </modifierGroup>
           </modifierGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c34-d765-eeb3-9787" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a3b-3c71-a896-105a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
