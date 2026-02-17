@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="7f63-3c97-8fab-8aac" name="Legions Astartes (Virdian&apos;s Expansion)" revision="213" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="7cd9-98b7-0ce8-026f" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="7f63-3c97-8fab-8aac" name="Legions Astartes" revision="213" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="7cd9-98b7-0ce8-026f" gameSystemRevision="71" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -16302,7 +16302,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="7"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
                 <entryLink id="385a-7cbc-d560-1e20" name="Shrapnel Bolter" hidden="false" collective="false" import="true" targetId="1941-21b5-932c-74d6" type="selectionEntry">
@@ -72331,7 +72331,7 @@ Lacking the complexity of true automata, these stationary units are set in place
                       </modifiers>
                       <constraints>
                         <constraint type="max" value="0" field="selections" scope="2231-cb49-b8b9-a51e" shared="true" id="dfd6-5a1f-a337-00c5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9450-8911-761f-7741" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="2231-cb49-b8b9-a51e" shared="true" id="9450-8911-761f-7741" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </constraints>
                       <entryLinks>
                         <entryLink import="true" name="Flamer" hidden="false" id="b0a9-081a-7753-58e3" collective="false" targetId="9f41-82e2-90f6-973a" type="selectionEntry" sortIndex="4">

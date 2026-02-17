@@ -6586,9 +6586,9 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
         <profile id="a940-e31d-1dce-50a1" name="Chain Bayonet" publicationId="a716-c1c4-7b26-8424" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Shred</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (5+), Reach (1), Murderous Strike (6+), Two-Handed</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8860,15 +8860,38 @@ A. No.</description>
         <infoLink id="f9cb-c66f-838f-0802" name="Bolter" targetId="1a2f-c0e3-d736-b91e" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry id="45bb-31b1-8ed3-7c95" name="Chain Bayonet" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="45bb-31b1-8ed3-7c95" name="Medusan Zweihander" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="eaf9-8bc6-1d07-1cd4" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
-        <infoLink id="b573-16c8-fea2-1965" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
-        <infoLink id="8328-e5e9-9ee2-e648" name="Chain Bayonet" targetId="a940-e31d-1dce-50a1" type="profile"/>
+        <infoLink id="eaf9-8bc6-1d07-1cd4" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" value="Rending (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="7f67-95a5-c234-638f" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+          <modifiers>
+            <modifier type="set" value="Reach (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="6437-3100-0e9d-9b66" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+          <modifiers>
+            <modifier type="set" value="Murderous Strike (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5b61-811b-2ced-0e92" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <profiles>
+        <profile name="Medusan Zweihander" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="fb36-6fad-e482-432f">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (5+), Reach (1), Murderous Strike (6+), Two-Handed</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="b5b7-b50a-ac86-9173" name="Chainsword" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
@@ -11530,6 +11553,44 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="0011-39d1-6d55-60da" name="Chain Bayonet" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1a3d-4b9c-6a2f-9a02" name="Chain Bayonet" publicationId="a716-c1c4-7b26-8424" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Shred</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="38a8-9005-a999-311a" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+        <infoLink id="669d-ca95-ca6b-6d54" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7e58-f82d-dfec-e267" name="Power Gauntlet" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d403-7273-9ec1-0780" name="Power Gauntlet" publicationId="362e-0e76-ce51-c905" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a model with a power gauntlet successfully charges an enemy unit in the assault phase, it gains Armourbane (Melee) until the end of the phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Armourbane (X)" id="e762-8278-a95a-341b" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" value="Armourbane (Melee)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
