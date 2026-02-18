@@ -5801,7 +5801,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="62d8-efb8-5c07-04a7" name="Chain Bayonet" hidden="false" collective="false" import="true" targetId="45bb-31b1-8ed3-7c95" type="selectionEntry">
+                    <entryLink id="62d8-efb8-5c07-04a7" name="Medusan Zweihander" hidden="false" collective="false" import="true" targetId="45bb-31b1-8ed3-7c95" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21b5-c4c5-3d8b-daed" type="max"/>
                       </constraints>
@@ -72331,7 +72331,6 @@ Lacking the complexity of true automata, these stationary units are set in place
                       </modifiers>
                       <constraints>
                         <constraint type="max" value="0" field="selections" scope="2231-cb49-b8b9-a51e" shared="true" id="dfd6-5a1f-a337-00c5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="max" value="1" field="selections" scope="2231-cb49-b8b9-a51e" shared="true" id="9450-8911-761f-7741" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </constraints>
                       <entryLinks>
                         <entryLink import="true" name="Flamer" hidden="false" id="b0a9-081a-7753-58e3" collective="false" targetId="9f41-82e2-90f6-973a" type="selectionEntry" sortIndex="4">
@@ -72573,7 +72572,7 @@ Lacking the complexity of true automata, these stationary units are set in place
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Pride is Our Armour Upgrade" hidden="true" id="92b9-cd0a-a128-69ea">
@@ -73118,7 +73117,7 @@ Lacking the complexity of true automata, these stationary units are set in place
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
           </costs>
           <entryLinks>
             <entryLink import="true" name="Character Stat Improvement" hidden="false" id="8584-fd4f-0baf-cb7c" type="selectionEntryGroup" targetId="5e99-fcf2-6b64-e88e">

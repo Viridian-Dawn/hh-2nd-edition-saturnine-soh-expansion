@@ -3465,8 +3465,8 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f721-e9ee-bf16-803f" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="64da-0270-ba24-a4e5" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry"/>
-                <entryLink id="d284-72b8-da08-65a5" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
+                <entryLink id="64da-0270-ba24-a4e5" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry" sortIndex="4"/>
+                <entryLink id="d284-72b8-da08-65a5" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry" sortIndex="5">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
@@ -3476,7 +3476,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
-                <entryLink id="d6ad-8de3-ce45-bf2b" name="Chainaxe" hidden="false" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry">
+                <entryLink id="d6ad-8de3-ce45-bf2b" name="Chainaxe" hidden="false" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry" sortIndex="3">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
                   </costs>
@@ -3496,12 +3496,12 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink id="fac5-a684-f4e3-75f1" name="Carsoran Power Axe" hidden="false" collective="false" import="true" targetId="fa70-f0d0-b06d-5413" type="selectionEntry">
+                <entryLink id="fac5-a684-f4e3-75f1" name="Carsoran Power Axe" hidden="false" collective="false" import="true" targetId="fa70-f0d0-b06d-5413" type="selectionEntry" sortIndex="1">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink id="9df5-d6e7-a3a0-f05e" name="Carsoran Power Tabar" hidden="false" collective="false" import="true" targetId="ef4f-80d4-1bba-77fb" type="selectionEntry">
+                <entryLink id="9df5-d6e7-a3a0-f05e" name="Carsoran Power Tabar" hidden="false" collective="false" import="true" targetId="ef4f-80d4-1bba-77fb" type="selectionEntry" sortIndex="2">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
@@ -7552,6 +7552,29 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
           </modifiers>
         </entryLink>
         <entryLink id="8d0f-98e6-0069-bd79" name="Command Squad, Saturnine" hidden="false" collective="false" import="true" targetId="bfb9-7c5c-a0c2-24b3" type="selectionEntry"/>
+        <entryLink id="d0c2-3ec7-f82f-f956" name="Chosen of Horus" hidden="false" collective="false" import="true" targetId="d2f9-e54c-23f0-3eb6" type="selectionEntry">
+          <modifiers>
+            <modifier type="append" field="name" value="(Reserve Only)">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="not">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f0a3-4ae4-e07a-91b8" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="The Warmaster&apos;s Retinue" id="c4ba-7c2a-07ce-aef8" hidden="false" publicationId="362e-0e76-ce51-c905">
+              <description>The Chosen of Horus may be selected as a Retinue only for Horus Lupercal or Horus Ascended. If the Chosen of Horus are selected as a retinue, they do not use up a Force Organisation slot and are considered part of the same unit as the model selected as its Leader. The Chosen of Horus must be deployed with the model selected as its Leader as part of the unit and the Leader may not voluntarily leave the retinue squad during play.</description>
+            </rule>
+          </rules>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="9c74-1002-8103-2848" name="Warlord Traits" hidden="false" collective="false" import="true">
