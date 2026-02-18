@@ -72506,7 +72506,7 @@ Lacking the complexity of true automata, these stationary units are set in place
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
               </costs>
               <categoryLinks>
                 <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="3d12-3f7f-3d4b-62eb" name="Infantry Unit Type" primary="false"/>
@@ -72572,7 +72572,7 @@ Lacking the complexity of true automata, these stationary units are set in place
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Pride is Our Armour Upgrade" hidden="true" id="92b9-cd0a-a128-69ea">
